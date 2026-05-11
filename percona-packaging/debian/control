@@ -1,0 +1,15 @@
+Source: percona-mongodb-mongot
+Section: database
+Priority: optional
+Maintainer: Percona LLC <info@percona.com>
+Build-Depends: debhelper (>= 9), lsb-release
+Standards-Version: 4.5.0
+Homepage: https://github.com/percona/mongot
+
+Package: percona-mongodb-mongot
+Architecture: amd64 arm64
+Depends: ${misc:Depends}, adduser
+Description: MongoDB Search (mongot) for Percona Server for MongoDB.
+ MongoDB Search (mongot) provides Full Text and Vector Search capabilities for
+ MongoDB. It is intended to run alongside Percona Server for MongoDB to serve
+ search queries and manage search indexes.
